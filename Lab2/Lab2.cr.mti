@@ -1,0 +1,16 @@
+{C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab2/encoder.sv} {1 {vlog -work work -sv -stats=none {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab2/encoder.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module encoder
+
+Top level modules:
+	encoder
+
+} {} {}} {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab2/encoder_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab2/encoder_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package encoder_tb_sv_unit
+-- Compiling module encoder_tb
+
+Top level modules:
+	encoder_tb
+
+} {} {}}

@@ -1,0 +1,43 @@
+{C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/decode7_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/decode7_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decode7_tb
+
+Top level modules:
+	decode7_tb
+
+} {} {}} {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/bcitid_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/bcitid_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bcitid_tb
+
+Top level modules:
+	bcitid_tb
+
+} {} {}} {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/decode2.sv} {1 {vlog -work work -sv -stats=none {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/decode2.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decode2
+
+Top level modules:
+	decode2
+
+} {} {}} {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/decode2_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/decode2_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decode2_tb
+
+Top level modules:
+	decode2_tb
+
+} {} {}} {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/decode7.sv} {1 {vlog -work work -sv -stats=none {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/decode7.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decode7
+
+Top level modules:
+	decode7
+
+} {} {}} {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/bcitid.sv} {1 {vlog -work work -sv -stats=none {C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/Lab1/bcitid.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bcitid
+
+Top level modules:
+	bcitid
+
+} {} {}}

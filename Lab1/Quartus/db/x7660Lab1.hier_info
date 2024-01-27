@@ -1,0 +1,64 @@
+|x7660Lab1
+CLOCK_50 => count[0].CLK
+CLOCK_50 => count[1].CLK
+CLOCK_50 => count[2].CLK
+CLOCK_50 => count[3].CLK
+CLOCK_50 => count[4].CLK
+CLOCK_50 => count[5].CLK
+CLOCK_50 => count[6].CLK
+CLOCK_50 => count[7].CLK
+CLOCK_50 => count[8].CLK
+CLOCK_50 => count[9].CLK
+CLOCK_50 => count[10].CLK
+CLOCK_50 => count[11].CLK
+CLOCK_50 => count[12].CLK
+CLOCK_50 => count[13].CLK
+CLOCK_50 => count[14].CLK
+CLOCK_50 => count[15].CLK
+leds[0] << decode7:decode7_0.leds[0]
+leds[1] << decode7:decode7_0.leds[1]
+leds[2] << decode7:decode7_0.leds[2]
+leds[3] << decode7:decode7_0.leds[3]
+leds[4] << decode7:decode7_0.leds[4]
+leds[5] << decode7:decode7_0.leds[5]
+leds[6] << decode7:decode7_0.leds[6]
+leds[7] << decode7:decode7_0.leds[7]
+ct[0] << decode2:decode2_0.ct[0]
+ct[1] << decode2:decode2_0.ct[1]
+ct[2] << decode2:decode2_0.ct[2]
+ct[3] << decode2:decode2_0.ct[3]
+
+
+|x7660Lab1|decode2:decode2_0
+digit[0] => Decoder0.IN1
+digit[1] => Decoder0.IN0
+ct[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ct[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ct[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ct[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|x7660Lab1|bcitid:bcitid_0
+digit[0] => Decoder0.IN1
+digit[1] => Decoder0.IN0
+idnum[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+idnum[1] <= <GND>
+idnum[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+idnum[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|x7660Lab1|decode7:decode7_0
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+leds[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+leds[7] <= <GND>
+
+

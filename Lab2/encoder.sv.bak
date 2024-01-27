@@ -1,0 +1,40 @@
+// ELEX 7660 Lab 2 
+// Author: Nicholas Scott AKA "White Cheddar"
+// Instructor: Sweet Bobby T
+
+module encoder (input logic a, b, clk,
+                output logic cw, ccw); 
+    
+    logic [1:0] state = {a,b};
+    logic [1:0] previous_state; 
+
+    always_ff @(posedge clk) begin 
+
+        state <= {a,b};
+        previous_state <= state; 
+
+        if (((state == 'b10) && (previous_state == 'b00)) || 
+            ((state == 'b11) && (previous_state == 'b10)) || 
+            ((state == 'b01) && (previous_state == 'b11)) || 
+            ((state == 'b00) && (previous_state == 'b01))) begin
+                cw <= 1;
+                ccw <= 0;
+            end 
+        else if (((state == 'b01) && (previous_state == 'b00)) || 
+                ((state == 'b11) && (previous_state == 'b01)) || 
+                ((state == 'b10) && (previous_state == 'b11)) || 
+                ((state == 'b00) && (previous_state == 'b10))) begin
+                    cw <= 0;
+                    ccw <= 1;
+                end 
+        else begin
+            cw <= 0;
+            ccw <= 0;
+        end  
+    end 
+endmodule
+
+
+
+
+
