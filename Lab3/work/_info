@@ -1,0 +1,129 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+venc2freq
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1706479938
+!i10b 1
+!s100 jz@4ZWUN`TVU@ja5:i2S11
+IU?`16kCe:`VoR^KY9Ia3W3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 enc2freq_sv_unit
+S1
+Z3 dC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3
+w1706477960
+8C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/enc2freq.sv
+FC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/enc2freq.sv
+L0 6
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1706479938.000000
+!s107 C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/enc2freq.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/enc2freq.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+venc2freq_tb
+R0
+DXx4 work 19 enc2freq_tb_sv_unit 0 22 jW:cf4CCIR:gzT?:F89T02
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 1^=5;o7b6NTk5UOf6QlKm3
+I1bd8]iiaFKkh6Hz>0An?T3
+!s105 enc2freq_tb_sv_unit
+S1
+R3
+Z8 w1706479889
+Z9 8C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/enc2freq_tb.sv
+Z10 FC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/enc2freq_tb.sv
+L0 18
+R4
+R5
+Z11 !s107 C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/enc2freq_tb.sv|
+Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/enc2freq_tb.sv|
+!i113 1
+R6
+R7
+Xenc2freq_tb_sv_unit
+R0
+VjW:cf4CCIR:gzT?:F89T02
+r1
+!s85 0
+31
+!i10b 1
+!s100 fPLh^UQ<zKB9Q1`7C=1nz1
+IjW:cf4CCIR:gzT?:F89T02
+!i103 1
+S1
+R3
+R8
+R9
+R10
+L0 8
+R4
+R5
+R11
+R12
+!i113 1
+R6
+R7
+vtonegen
+R0
+R1
+!i10b 1
+!s100 VY>Y0H;Ji_jH0=cNKhckT0
+Iaj8@[Mk_]27CVW`?lWH3`3
+R2
+!s105 tonegen_sv_unit
+S1
+R3
+w1706465243
+8C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/tonegen.sv
+FC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/tonegen.sv
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/tonegen.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/tonegen.sv|
+!i113 1
+R6
+R7
+vtonegen_tb
+R0
+R1
+!i10b 1
+!s100 NHefV;^=4V`M4Zjk9zn;Y2
+I_jOPi=62IEe0zDJ9hO]f[0
+R2
+!s105 tonegen_tb_sv_unit
+S1
+R3
+w1706021718
+8C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/tonegen_tb.sv
+FC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/tonegen_tb.sv
+L0 9
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/tonegen_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3/tonegen_tb.sv|
+!i113 1
+R6
+R7
