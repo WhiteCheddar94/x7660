@@ -1,0 +1,155 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab3
+vencoder
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1706749473
+!i10b 1
+!s100 zic[^johi=z18KP^nNd=`3
+IG<0YhFBcfIPUgkU0b=nbz2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 encoder_sv_unit
+S1
+Z3 dC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1
+w1706661156
+8C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/encoder.sv
+FC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/encoder.sv
+L0 6
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1706749473.000000
+!s107 C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/encoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/encoder.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vencoder_tb
+R0
+DXx4 work 18 encoder_tb_sv_unit 0 22 hbY@VgMZAm4ZiTD]S6:>d2
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 m51n:I?=YNgSFSF`iV<mm1
+IUc:DDU9BzUC81:DLLAW0V0
+!s105 encoder_tb_sv_unit
+S1
+R3
+Z8 w1706660839
+Z9 8C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/encoder_tb.sv
+Z10 FC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/encoder_tb.sv
+Z11 L0 18
+R4
+Z12 !s108 1706749472.000000
+Z13 !s107 C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/encoder_tb.sv|
+Z14 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/encoder_tb.sv|
+!i113 1
+R6
+R7
+Xencoder_tb_sv_unit
+R0
+VhbY@VgMZAm4ZiTD]S6:>d2
+r1
+!s85 0
+31
+!i10b 1
+!s100 G4>bFG^7]I2QaPNbQ:MQ61
+IhbY@VgMZAm4ZiTD]S6:>d2
+!i103 1
+S1
+R3
+R8
+R9
+R10
+L0 8
+R4
+R12
+R13
+R14
+!i113 1
+R6
+R7
+vshiftReg
+R0
+R1
+!i10b 1
+!s100 ^;]Mc4G[YSz2d4964OH]c2
+IWD=9m^d2:k6^kP@1;o05[3
+R2
+!s105 shiftReg_sv_unit
+S1
+R3
+w1706749138
+8C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/shiftReg.sv
+FC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/shiftReg.sv
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/shiftReg.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/shiftReg.sv|
+!i113 1
+R6
+R7
+nshift@reg
+vshiftReg_tb
+R0
+DXx4 work 19 shiftReg_tb_sv_unit 0 22 Q@2`9zh2cFanb:Ki`TK2=0
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 enHXT3LCzLFCNTQXEF@eL2
+INW2mnb;S^oCVMV<_6_dO=2
+!s105 shiftReg_tb_sv_unit
+S1
+R3
+Z15 w1706748169
+Z16 8C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/shiftReg_tb.sv
+Z17 FC:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/shiftReg_tb.sv
+R11
+R4
+R5
+Z18 !s107 C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/shiftReg_tb.sv|
+Z19 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Assignments/Ass1/shiftReg_tb.sv|
+!i113 1
+R6
+R7
+nshift@reg_tb
+XshiftReg_tb_sv_unit
+R0
+VQ@2`9zh2cFanb:Ki`TK2=0
+r1
+!s85 0
+31
+!i10b 1
+!s100 EncNYlk0[@O?z36b?;:>n0
+IQ@2`9zh2cFanb:Ki`TK2=0
+!i103 1
+S1
+R3
+R15
+R16
+R17
+L0 8
+R4
+R5
+R18
+R19
+!i113 1
+R6
+R7
+nshift@reg_tb_sv_unit
