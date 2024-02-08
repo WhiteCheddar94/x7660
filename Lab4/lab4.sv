@@ -30,7 +30,7 @@ module lab4 ( input logic ADC_SDO,        // ADC input
    decode7 decode7_0 (.num(disp_digit),.leds) ;
    encoder encoder_1 (.clk(CLOCK_50), .a(enc1_a), .b(enc1_b), .cw(enc1_cw), .ccw(enc1_ccw));
    enc2chan enc2chan_1 (.clk(CLOCK_50), .cw(enc1_cw), .ccw(enc1_ccw), .chan(chan), .reset_n(s1));
-   adcinterface adcinterface_1 (.clk(clk_div_count[15]), .reset_n(s1), .chan, .result, .ADC_CONVST, .ADC_SCK, .ADC_SDI, .ADC_SDO);
+   adcinterface adcinterface_1 (.clk(clk_div_count[15]), .reset_n(s1), .chan(chan), .result, .ADC_CONVST, .ADC_SCK, .ADC_SDI, .ADC_SDO);
 
    // use count to divide clock and generate a 2 bit digit counter to determine which digit to display
    always_ff @(posedge CLOCK_50) 

@@ -56,11 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "s1",
+					"name" : "CLOCK_50",
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK_50",
+					"name" : "s1",
 					"strict" : false
 				},
 				{

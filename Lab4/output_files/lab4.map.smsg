@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at adcinterface.sv(47): always construct contains both blocking and non-blocking assignments File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 47

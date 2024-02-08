@@ -6,7 +6,7 @@
 
 module enc2chan 
    ( input logic cw, ccw,       // outputs from lab 2 encoder module 
-     output logic [3:0] chan,  // desired channel
+     output logic [2:0] chan,  // desired channel
      input logic reset_n, clk); // reset and clock  
 
     logic [7:0] countup = 0; 
@@ -20,7 +20,7 @@ module enc2chan
                 countdown <= countdown + 1; // Count "down" for ccw movement 
             
             if (countup >= 4) begin // after 4 cw pulses
-                case (chan) // increment to next frequency of C Major scale 
+                case (chan) // increment to next channel
                     0 : chan <= 1; 
                     1 : chan <= 2;
                     2 : chan <= 3; 

@@ -16,7 +16,6 @@ module adcinterface(
 
     logic [5:0] word; 
     logic [3:0] count; 
-    logic [3:0] adcCount; 
     logic [11:0] tempResult; 
 
     assign ADC_SCK = ((count >= 2) && (count <= 13)) ? clk : 1'b0;
@@ -33,15 +32,20 @@ module adcinterface(
             7 : word = '{1, 1, 1, 1, 1, 0}; 
         endcase
     end 
-    always_ff @( negedge clk or negedge reset_n ) begin
 
-        count <= count + 1; 
-
-        if (~reset_n) begin 
+    always_ff @( negedge clk or negedge reset_n ) begin     
+        if (~reset_n)  
             count <= 0; 
-            ADC_CONVST <= 1; 
-        end 
         else 
+            count <= count + 1; 
+    end
+
+    always_ff @( negedge clk or negedge reset_n ) begin     
+        if (~reset_n) begin 
+            ADC_CONVST <= 0; 
+            ADC_SDI <= 0; 
+        end 
+        else begin
             case (count)
                 0 : ADC_CONVST <= 0;
                 1 : ADC_SDI <= word[5]; 
@@ -53,6 +57,7 @@ module adcinterface(
                 15 : ADC_CONVST <= 1; 
                 default : ADC_SDI <= 0; 
             endcase      
+        end
     end 
 
     always_ff @(posedge clk)
@@ -71,6 +76,7 @@ module adcinterface(
             12 : tempResult[1] <= ADC_SDO; 
             13 : tempResult[0] <= ADC_SDO;
             14 : result <= tempResult; 
+            default: result <= result; 
         endcase
 
 endmodule 
