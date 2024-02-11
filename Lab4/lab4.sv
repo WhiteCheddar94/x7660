@@ -40,14 +40,15 @@ module lab4 ( input logic ADC_SDO,        // ADC input
   assign digit = clk_div_count[15:14]; 
 
   // Select digit to display (disp_digit)
-  // each digit displays one nibble of tone frequency in hexidecimal 
+  // the right three digits display the ADC output in hexadecimal 
+  // the leftmost digit displays the channel  
   always_comb begin
   
     case (digit)
-      0 : disp_digit = result[3:0]; // Set digit 0 to encoder 2 count LSN (Least Significant Nibble)
-      1 : disp_digit = result[7:4]; // Set digit 1 to encoder 2 count MSN
-      2 : disp_digit = result[11:8]; // Set digit 2 to encoder 1 count LSN
-      3 : disp_digit = chan; // Set digit 3 to encoder 1 count MSN
+      0 : disp_digit = result[3:0]; // result LSN (Least Significant Nibble)
+      1 : disp_digit = result[7:4]; // the middle nibble 
+      2 : disp_digit = result[11:8]; // result MSN
+      3 : disp_digit = chan; // Set digit 3 channel
     endcase 
   
   end  

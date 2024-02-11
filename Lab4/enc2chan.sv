@@ -34,7 +34,7 @@ module enc2chan
                 countup <= 0;
             end
             else if (countdown >= 4) begin // after 4 ccw pulses
-                case (chan) // decrement to last frequency of C Major scale
+                case (chan) // decrement to last channel
                     0 : chan <= 7;    // ccw rollover
                     7 : chan <= 6; 
                     6 : chan <= 5; 

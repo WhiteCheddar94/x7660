@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab4
-Tue Feb 06 15:19:09 2024
+Sat Feb 10 15:40:28 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,16 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Source assignments for Top-level Entity: |lab4
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +42,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Tue Feb 06 15:19:09 2024           ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; lab4                                        ;
-; Top-level Entity Name       ; lab4                                        ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat Feb 10 15:40:28 2024       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; lab4                                        ;
+; Top-level Entity Name           ; lab4                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 71                                          ;
+; Total pins                      ; 23                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -147,11 +161,156 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; lab4.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv         ;         ;
+; encoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/encoder.sv      ;         ;
+; enc2chan.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/enc2chan.sv     ;         ;
+; decode7.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/decode7.sv      ;         ;
+; decode2.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/decode2.sv      ;         ;
+; adcinterface.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 49             ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 83             ;
+;     -- 7 input functions                    ; 1              ;
+;     -- 6 input functions                    ; 11             ;
+;     -- 5 input functions                    ; 6              ;
+;     -- 4 input functions                    ; 20             ;
+;     -- <=3 input functions                  ; 45             ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 71             ;
+;                                             ;                ;
+; I/O pins                                    ; 23             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 41             ;
+; Total fan-out                               ; 518            ;
+; Average fan-out                             ; 2.59           ;
++---------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+--------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name  ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+--------------+--------------+
+; |lab4                            ; 83 (20)             ; 71 (16)                   ; 0                 ; 0          ; 23   ; 0            ; |lab4                             ; lab4         ; work         ;
+;    |adcinterface:adcinterface_1| ; 27 (27)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |lab4|adcinterface:adcinterface_1 ; adcinterface ; work         ;
+;    |decode2:decode2_0|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab4|decode2:decode2_0           ; decode2      ; work         ;
+;    |decode7:decode7_0|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab4|decode7:decode7_0           ; decode7      ; work         ;
+;    |enc2chan:enc2chan_1|         ; 23 (23)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |lab4|enc2chan:enc2chan_1         ; enc2chan     ; work         ;
+;    |encoder:encoder_1|           ; 2 (2)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |lab4|encoder:encoder_1           ; encoder      ; work         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 71    ;
+; Number of registers using Synchronous Clear  ; 19    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 18    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 28    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; adcinterface:adcinterface_1|ADC_CONVST ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab4|enc2chan:enc2chan_1|countdown[7] ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab4|Mux3                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++------------------------------------------------+
+; Source assignments for Top-level Entity: |lab4 ;
++-----------------------+-------+------+---------+
+; Assignment            ; Value ; From ; To      ;
++-----------------------+-------+------+---------+
+; WEAK_PULL_UP_RESISTOR ; ON    ; -    ; enc1_a  ;
+; WEAK_PULL_UP_RESISTOR ; ON    ; -    ; enc1_b  ;
+; WEAK_PULL_UP_RESISTOR ; ON    ; -    ; enc2_a  ;
+; WEAK_PULL_UP_RESISTOR ; ON    ; -    ; enc2_b  ;
++-----------------------+-------+------+---------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 71                          ;
+;     CLR               ; 6                           ;
+;     ENA CLR           ; 12                          ;
+;     ENA SCLR          ; 16                          ;
+;     SCLR              ; 3                           ;
+;     plain             ; 34                          ;
+; arriav_lcell_comb     ; 94                          ;
+;     arith             ; 31                          ;
+;         1 data inputs ; 28                          ;
+;         2 data inputs ; 3                           ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 62                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 20                          ;
+;         5 data inputs ; 6                           ;
+;         6 data inputs ; 11                          ;
+; boundary_port         ; 23                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.89                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -160,7 +319,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Feb 06 15:18:57 2024
+    Info: Processing started: Sat Feb 10 15:40:14 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab4 -c lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -177,25 +336,34 @@ Info (12021): Found 1 design units, including 1 entities, in source file decode2
 Info (12021): Found 1 design units, including 1 entities, in source file adcinterface.sv
     Info (12023): Found entity 1: adcinterface File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 7
 Info (12127): Elaborating entity "lab4" for the top level hierarchy
-Info (12128): Elaborating entity "decode2" for hierarchy "decode2:decode2_0" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 29
-Info (12128): Elaborating entity "decode7" for hierarchy "decode7:decode7_0" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 30
-Info (12128): Elaborating entity "encoder" for hierarchy "encoder:encoder_1" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 31
-Info (12128): Elaborating entity "enc2chan" for hierarchy "enc2chan:enc2chan_1" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 32
+Warning (10036): Verilog HDL or VHDL warning at lab4.sv(24): object "chan1" assigned a value but never read File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 24
+Info (12128): Elaborating entity "decode2" for hierarchy "decode2:decode2_0" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 30
+Info (12128): Elaborating entity "decode7" for hierarchy "decode7:decode7_0" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 31
+Info (12128): Elaborating entity "encoder" for hierarchy "encoder:encoder_1" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 32
+Info (12128): Elaborating entity "enc2chan" for hierarchy "enc2chan:enc2chan_1" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 33
 Warning (10230): Verilog HDL assignment warning at enc2chan.sv(18): truncated value with size 32 to match size of target (8) File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/enc2chan.sv Line: 18
 Warning (10230): Verilog HDL assignment warning at enc2chan.sv(20): truncated value with size 32 to match size of target (8) File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/enc2chan.sv Line: 20
-Info (12128): Elaborating entity "adcinterface" for hierarchy "adcinterface:adcinterface_1" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 33
-Warning (10240): Verilog HDL Always Construct warning at adcinterface.sv(24): inferring latch(es) for variable "ADC_CONVST", which holds its previous value in one or more paths through the always construct File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 24
-Warning (10240): Verilog HDL Always Construct warning at adcinterface.sv(24): inferring latch(es) for variable "ADC_SDI", which holds its previous value in one or more paths through the always construct File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 24
-Error (10166): SystemVerilog RTL Coding error at adcinterface.sv(24): always_comb construct does not infer purely combinational logic. File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 24
-Warning (10230): Verilog HDL assignment warning at adcinterface.sv(54): truncated value with size 32 to match size of target (4) File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 54
-Warning (10030): Net "word" at adcinterface.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 17
-Info (10041): Inferred latch for "ADC_SDI" at adcinterface.sv(24) File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 24
-Info (10041): Inferred latch for "ADC_CONVST" at adcinterface.sv(24) File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 24
-Error (12152): Can't elaborate user hierarchy "adcinterface:adcinterface_1" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 33
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 7 warnings
-    Error: Peak virtual memory: 4770 megabytes
-    Error: Processing ended: Tue Feb 06 15:19:09 2024
-    Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:14
+Info (12128): Elaborating entity "adcinterface" for hierarchy "adcinterface:adcinterface_1" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 34
+Warning (10230): Verilog HDL assignment warning at adcinterface.sv(42): truncated value with size 32 to match size of target (4) File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/adcinterface.sv Line: 42
+Info (13014): Ignored 2 buffer(s)
+    Info (13019): Ignored 2 SOFT buffer(s)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 14
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "enc2_a" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 12
+    Warning (15610): No output dependent on input pin "enc2_b" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 12
+    Warning (15610): No output dependent on input pin "s2" File: C:/Users/nicws/OneDrive/Desktop/2nd year Beng/Term 6/ELEX 7660/Labs/x7660/Lab4/lab4.sv Line: 13
+Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 99 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Sat Feb 10 15:40:28 2024
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:21
 
 
